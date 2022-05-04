@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ <bean class="spring.core.Address" name="address" p:street="university_road" p:city="rewa" p:district="satna"/>
+ 
+ <bean class="spring.core.Student" name="student1" >
+  <property name="sid">
+   <value>101</value>
+  </property>
+ <property name="sname">
+   <value>satyam</value>
+ </property>
+ <property name="address">
+   <ref bean="address"/>
+ </property>
+ </bean>
+ 
+ 
+ </beans>
