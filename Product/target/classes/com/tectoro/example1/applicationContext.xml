@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="pro" class="com.tectoro.example1.Pruduct">
+		<property name="pid" value="201"></property>
+		<property name="pname" value="Mobile"></property>
+		<property name="cname" value="Samsung"></property>
+		<property name="pcost" value="10000"></property>
+	</bean>
+</beans>
